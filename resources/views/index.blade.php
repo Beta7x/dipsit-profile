@@ -70,7 +70,7 @@
                         <p>Pengetahuan umum mengenai pendidikan kepramukaan.</p>
                     </span>
                 </article>
-
+                
                 <article class="category">
                     <span class="category__icon">
                         <img class="category__icon-image" src="{{ asset('images/rope(1).png') }}">
