@@ -14,7 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', function() {
+    return 'Website ini berdiri sejak Kamu pergi meninggalkanku.</br>
+    Sabar belum waktunya release.</br>
+    </br>message from developer beta7x';
+});
+
+// Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/news', [HomeController::class, 'news']);
 Route::get('/contact', [HomeController::class, 'contact']);
