@@ -13,19 +13,21 @@
     {{-- Google Fonts (Montserrat)--}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins&display=swap" rel="stylesheet">
+    {{-- SwiperJS CDN --}}
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
 </head>
 <body>
     {{-- navbar --}}
     <nav>
         <div class="container nav__container">
-            <a href="/"><h4>DIPSIT</h4></a>
+            <a href="#"><h4>DIPSIT</h4></a>
             <ul class="nav__menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/news">News</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -40,7 +42,7 @@
                 <h1>Beranilah, ambil risiko. Tidak ada yang bisa menggantikan pengalaman.</h1>
                 <p>Tinggi moral kuat mental. Manusia pantang menyerah. Tegar jiwanya berpegang teguh pada satya dan dharmanya. Pramuka mengajarkan kebersamaan, kedisiplinan, kemandirian, jiwa korsa dan semangat pantang menyerah. Pramuka merekatkan bukan meretakan.
                 </p>
-                <a href="/news" class="btn btn-primary">Join Us</a>
+                <a href="#" class="btn btn-primary">Join Us</a>
             </div>
             <div class="header__right">
                 <div class="header__right-image">
@@ -129,7 +131,7 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum explicabo earum est libero eius ipsa enim.
                     </p>
-                    <a href="/achievements" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-primary">Read More</a>
                 </div>
             </article>
 
@@ -142,7 +144,7 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum explicabo earum est libero eius ipsa enim.
                     </p>
-                    <a href="/achievements" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-primary">Read More</a>
                 </div>
             </article>
 
@@ -155,7 +157,7 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum explicabo earum est libero eius ipsa enim.
                     </p>
-                    <a href="/achievements" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-primary">Read More</a>
                 </div>
             </article>
         </div>
@@ -229,6 +231,225 @@
     </section>
     {{-- End of FAQs --}}
 
+    {{-- Pengurus Harian --}}
+    <section class="container troops__container mySwiper">
+        <h2>Pengurus Harian Ambalan DIPSIT</h2>
+        <div class="swiper-wrapper">
+            <article class="troop swiper-slide">
+                <div class="avatar">
+                    <img src="{{ asset('images/avatar/diponegoro.png') }}">
+                </div>
+                <div class="troop__info">
+                    <h5>Widies Ade Priyanto</h5>
+                    <small>Pemangku Adat</small>
+                </div>
+                <div class="troop__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum qui saepe a explicabo ut, repellat reiciendis culpa voluptatum, laboriosam est dicta magnam. Ad totam repellendus possimus excepturi distinctio architecto hic.
+                    </p>
+                </div>
+            </article>
+
+            <article class="troop swiper-slide">
+                <div class="avatar">
+                    <img src="{{ asset('images/avatar/diponegoro.png') }}">
+                </div>
+                <div class="troop__info">
+                    <h5>Widies Ade Priyanto</h5>
+                    <small>Pemangku Adat</small>
+                </div>
+                <div class="troop__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum qui saepe a explicabo ut, repellat reiciendis culpa voluptatum, laboriosam est dicta magnam. Ad totam repellendus possimus excepturi distinctio architecto hic.
+                    </p>
+                </div>
+            </article>
+
+            <article class="troop swiper-slide">
+                <div class="avatar">
+                    <img src="{{ asset('images/avatar/diponegoro.png') }}">
+                </div>
+                <div class="troop__info">
+                    <h5>Widies Ade Priyanto</h5>
+                    <small>Pemangku Adat</small>
+                </div>
+                <div class="troop__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum qui saepe a explicabo ut, repellat reiciendis culpa voluptatum, laboriosam est dicta magnam. Ad totam repellendus possimus excepturi distinctio architecto hic.
+                    </p>
+                </div>
+            </article>
+
+            <article class="troop swiper-slide">
+                <div class="avatar">
+                    <img src="{{ asset('images/avatar/diponegoro.png') }}">
+                </div>
+                <div class="troop__info">
+                    <h5>Widies Ade Priyanto</h5>
+                    <small>Pemangku Adat</small>
+                </div>
+                <div class="troop__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum qui saepe a explicabo ut, repellat reiciendis culpa voluptatum, laboriosam est dicta magnam. Ad totam repellendus possimus excepturi distinctio architecto hic.
+                    </p>
+                </div>
+            </article>
+
+            <article class="troop swiper-slide">
+                <div class="avatar">
+                    <img src="{{ asset('images/avatar/diponegoro.png') }}">
+                </div>
+                <div class="troop__info">
+                    <h5>Widies Ade Priyanto</h5>
+                    <small>Pemangku Adat</small>
+                </div>
+                <div class="troop__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum qui saepe a explicabo ut, repellat reiciendis culpa voluptatum, laboriosam est dicta magnam. Ad totam repellendus possimus excepturi distinctio architecto hic.
+                    </p>
+                </div>
+            </article>
+
+            <article class="troop swiper-slide">
+                <div class="avatar">
+                    <img src="{{ asset('images/avatar/diponegoro.png') }}">
+                </div>
+                <div class="troop__info">
+                    <h5>Widies Ade Priyanto</h5>
+                    <small>Pemangku Adat</small>
+                </div>
+                <div class="troop__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum qui saepe a explicabo ut, repellat reiciendis culpa voluptatum, laboriosam est dicta magnam. Ad totam repellendus possimus excepturi distinctio architecto hic.
+                    </p>
+                </div>
+            </article>
+
+            <article class="troop swiper-slide">
+                <div class="avatar">
+                    <img src="{{ asset('images/avatar/diponegoro.png') }}">
+                </div>
+                <div class="troop__info">
+                    <h5>Widies Ade Priyanto</h5>
+                    <small>Pemangku Adat</small>
+                </div>
+                <div class="troop__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum qui saepe a explicabo ut, repellat reiciendis culpa voluptatum, laboriosam est dicta magnam. Ad totam repellendus possimus excepturi distinctio architecto hic.
+                    </p>
+                </div>
+            </article>
+
+            <article class="troop swiper-slide">
+                <div class="avatar">
+                    <img src="{{ asset('images/avatar/diponegoro.png') }}">
+                </div>
+                <div class="troop__info">
+                    <h5>Widies Ade Priyanto</h5>
+                    <small>Pemangku Adat</small>
+                </div>
+                <div class="troop__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum qui saepe a explicabo ut, repellat reiciendis culpa voluptatum, laboriosam est dicta magnam. Ad totam repellendus possimus excepturi distinctio architecto hic.
+                    </p>
+                </div>
+            </article>
+
+            <article class="troop swiper-slide">
+                <div class="avatar">
+                    <img src="{{ asset('images/avatar/diponegoro.png') }}">
+                </div>
+                <div class="troop__info">
+                    <h5>Widies Ade Priyanto</h5>
+                    <small>Pemangku Adat</small>
+                </div>
+                <div class="troop__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum qui saepe a explicabo ut, repellat reiciendis culpa voluptatum, laboriosam est dicta magnam. Ad totam repellendus possimus excepturi distinctio architecto hic.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    {{-- End of Pengurus Harian --}}
+
+    {{-- Footer Section --}}
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="/" class="footer__logo"><h4>DIPSIT</h4></a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ducimus deleniti alias eaque soluta cum dolore totam dignissimos aspernatur. Harum ex, vel consequatur nesciunt porro ad vero voluptatibus. Consectetur, nulla?
+                </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__4">
+                <h4>Kontak kami</h4>
+                <div>
+                    <p>+62-813-9367-7013</p>
+                    <p>dipsit@gmail.com</p>
+                </div>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; DIPSIT 2022</small>
+        </div>
+    </footer>
+    {{-- End of Footer Section --}}
+
     <script src="{{ asset('js/main.js') }}"></script>
+    {{-- SwiperJS CDN --}}
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // when window width more than 600px
+            breakpoints: {
+                600 : {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
 </body>
 </html>
