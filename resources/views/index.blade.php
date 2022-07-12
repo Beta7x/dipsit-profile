@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DipSit | Home</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico')}}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/style.css') }}"> --}}
+    <link rel="stylesheet" href="https://pramukasmapang.herokuapp.com/css/style.css">
 
     {{-- Iconscout CDN --}}
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -432,7 +433,8 @@
     </footer>
     {{-- End of Footer Section --}}
 
-    <script src="{{ asset('js/main.js') }}"></script>
+    {{-- <script src="{{ asset('js/main.js') }}"></script> --}}
+    <script src="https://pramukasmapang.herokuapp.com/js/main.js"></script>
     {{-- SwiperJS CDN --}}
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
