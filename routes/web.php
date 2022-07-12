@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\URL;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +21,10 @@ use Illuminate\Support\Facades\Route;
 //     Sabar belum waktunya release.</br>
 //     </br>message from developer beta7x';
 // });
+
+if (App::environment('production')) {
+    URL::forceScheme('https');
+};
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
