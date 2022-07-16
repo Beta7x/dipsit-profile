@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Posts;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index() {
-        return view('index');
+        return view('home');
     }
 
     public function about() {
@@ -15,7 +16,15 @@ class HomeController extends Controller
     }
 
     public function news() {
-        return view('news');
+        return view('news', [
+            "posts" => Posts::all(),
+        ]);
+    }
+
+    public function posts($slug) {
+        return view('post', [
+            "post" => Posts::find($slug),
+        ]);
     }
 
     public function contact() {

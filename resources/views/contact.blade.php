@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DipSit | Contact</title>
-</head>
-<body>
-    <h1>Halaman Contact</h1>
-</body>
-</html>
+@extends('layouts.main')
+
+@section('title', 'Kontak')
+
+@section('content')
+<section>
+    <div class="container">
+        <h2>Halaman Kontak</h2>
+    </div>
+</section>
+@endsection

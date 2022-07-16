@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DipSit | About</title>
-</head>
-<body>
-    <h1>Halaman About</h1>
-</body>
-</html>
+@extends('layouts.main')
+
+@section('title', 'Tentang Kami')
+
+@section('content')
+<link rel="stylesheet" href="/css/about.css">
+<section>
+    <div class="container about__container">
+        <h2>Halaman About</h2>
+    </div>
+</section>
+@endsection

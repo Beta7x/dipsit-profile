@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DipSit | News</title>
-</head>
-<body>
-    <h1>Halaman News</h1>
-</body>
-</html>
+@extends('layouts.main')
+
+@section('title', 'Berita')
+
+{{-- @include('partials.header') --}}
+
+@section('content')
+<link rel="stylesheet" href="css/news.css">
+{{-- @dd($posts) --}}
+@foreach($posts as $post)
+<article>
+    <div class="container news__container">
+        <h2>
+            <a href="/news/{{$post["slug"]}}">{{ $post["title"] }}</a>
+        </h2>
+        <h5>By: {{ $post["author"] }}</h5>
+        <p>{{ $post["body"]}}</p>
+    </div>
+</article>
+@endforeach
+@endsection
